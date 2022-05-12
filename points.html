@@ -1,0 +1,71 @@
+<!--<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reward Point Test</title>
+	</head>
+	<body>
+		<p>Reserve: <span id="submit"></span></p>
+		
+		<button onclick= "addTosubmit(100)">submit</button>
+		
+		<script> 
+		//Begin javascript
+		//var totalReserve = 0; // your score now
+			
+		//function addTosubmit(amount) {
+			//totalReserve = totalReserve + amount;
+			//document.getElementById("submit").innerHTML = totalReserve;
+			
+		//}
+	
+
+		
+		</script>
+		
+	</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<h2 class ="form_header" id = "score"> Booking : 0 </h2>
+	<!--<h2 id="points"> Booking : 0 </h2>-->
+	</div>
+
+	<div id="form_content_container">
+	<div id="form_content_inner_container">          
+<!-- <input type="hidden" id="singleRoom"...final segunda parte diseno>-->
+
+	<div id= "container">
+	<div
+	  id = "roomType"> Select a room type: 
+	 <select id="select">
+		<option value="singleRoom">Single Room</option>
+		<option value="doubleRoom">Double Room</option>
+	</select>
+	
+	</div>
+	</div>
+	<div
+	class = "Select a Date:"> Start Date: 
+	<input type="datetime-local" id="startDate"/>
+	</div>
+	<div
+	class = "Select a Data"> End Date: 
+	<input type="datetime-local" id="endDate"/>
+	</div>
+	<div
+	id="button_container">
+	<button id = "submit points" onclick= "addpoints()">Reserve </button>
+	<button id = "submit to save" onclick= "save()">Reservetion to user Account</button>
+	<!--<button id="submit">Reserve</button>-->
+	</div>
+</form>
+   </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="points.js"></script>
+
+
+</body>
+</html>
+

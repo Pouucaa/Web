@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="styles.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
+        <link href="infopages.css" rel="stylesheet">
+
+            <title>Admin Login</title>
+             <!-- Cool Google Fonts -->
+             <link rel="preconnect" href="https://fonts.googleapis.com">
+             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+             <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+            <!-- Our stylesheet -->
+            <link rel="stylesheet" type="text/css" href="login.css">
+
+    </head>
+    <body class="full-height-grow">
+        <div class="container">
+            <header> 
+                <nav>
+                    <div class="row">
+                        <img src="images/palmtree.png" class="logo-image">
+                        <div class="logo">
+                            <li><a href="home.html">HOTEL PARADISE</a></li>
+                        </div>
+                        
+                        <ul class="main-nav" id="check-class">
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="rooms.html">Rooms</a></li>
+                            <li><a href="loyaltyProgram.html">Loyalty Program</a></li>
+                            <li><a href="login.html">Login </a></li>
+                            <li><a href="adminLogin.html">Admin Login</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+    </div>
+    
+
+        <div id="content_container">
+            <div id="form_container">
+                <div id="form_header_container">
+                    <h2 id="form_header"> Administration Login </h2>
+                </div>
+
+                <div id="form_content_container">
+                    <div id="form_content_inner_container">
+                        <input type="text" id="first_name" placeholder="First name">
+                        <input type="text" id="last_name" placeholder="Last name">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="password" id="password" placeholder="New Password">
+                        <input type="hidden" id="staff">
+                        <input type="hidden" id="manager">
+                        <input type="hidden" id="administration">
+
+                        <label for="type">Choose the following: </label>
+                            <select>
+                            <option id="staff" value="staff">Staff</option>
+                            <option id="manager" value="manager">Manager</option>
+                            <option id="administration" value="administration">Administration</option>
+                            </select>
+
+
+                        <div id="button_container">
+                            <button onclick="login()">Login</button>
+                            <button onclick="register()">Register</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="login.js"></script>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="styles.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
+        <link href="infopages.css" rel="stylesheet">
+        
+    <title>Bookings | firebase</title>
+        <!-- Cool Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+       
+    </head>
+        <!-- Our stylesheet for booking-->
+        <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+
+    <body class="full-height-grow">
+        <!--here we get the id for the booking.js connection-->
+        <form action="" id="ReservationForm">
+        <div id="container">
+    
+    <header> 
+        <nav>
+        <div class="row">
+        <img src="images/palmtree.png" class="logo-image">
+        <div class="logo">
+        <li><a href="home.html">HOTEL PARADISE</a></li>
+        </div>
+                        
+        <ul class="main-nav" id="check-class">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="loyaltyProgram.html">Loyalty Program</a></li>
+        <li><a href="login.html">Login </a></li>
+        
+        </ul>
+        </div>
+        </nav>
+    </header>
+        </div> 
+        <!--end for page-->
+       
+        <div class ="content_container">
+        <div id="form_container">
+        <div id="form_header_container">
+        <h2 id="form_header"> Booking </h2>
+        </div>
+
+        <div id="form_content_container">
+        <div id="form_content_inner_container">          
+        <div id= "container">
+            <!--values and id for our-->
+        <input value="" id="firstName" placeholder="First name">  
+        <input value="" id="lasttName" placeholder="last name">  
+        
+        <div
+          id = "roomType"> Select a room type: 
+         <select id="select">
+            <option value="singleRoom">Single Room</option>
+            <option value="doubleRoom">Double Room</option>
+        </select>
+        
+        </div>
+        </div>
+        <div>
+        <div class = "Select a Date:"> Start Date: 
+        <input type="datetime-local" id="startDate"/>
+        </div>
+        <div
+        class = "Select a Data"> End Date: 
+        <input type="datetime-local" id="endDate"/>
+        </div>
+        <div
+
+        id="button_container">
+        <button id = "submit" onclick= "addpoints()">Reserve </button>
+        <script>
+            var  points = 0;
+
+            function addpoints(){
+	        points = points + 100;
+
+	        document.getElementById("submit").innerHTML;
+         }
+    </script>
+        </div>
+    </form>
+        </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="bookings.js"></script>
+</body>
+</html>
